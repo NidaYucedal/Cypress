@@ -1,0 +1,12 @@
+node_modules/
+coverage/
+.nyc_output/
+.env.*
+.DS_Store
+.vscode/
+package.json
+package-lock.json
+videos/
+screenshots/
+fixtures/
+support/
