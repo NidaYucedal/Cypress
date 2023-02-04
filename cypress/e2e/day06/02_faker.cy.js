@@ -58,6 +58,11 @@ describe('Using Faker',() => {
 
         cy.get('[data-qa="create-account"]').click();
 
+        cy.get('b').should('be.visible');
+
+        cy.get('[data-qa="continue-button"]').click();
+        cy.get(':nth-child(10) > a').should('include.text', firstName);
+
        
 
 
