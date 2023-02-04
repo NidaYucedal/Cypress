@@ -9,8 +9,17 @@ describe('Using Faker',() => {
     it('Faker Login Test', () => {
        
         cy.visit('https://automationexercise.com/');
-        let firstName=faker.name.firstName();
-        let password=faker.password();
+        cy.get('.shop-menu > .nav > :nth-child(4)').click();
+       
+        let name=faker.name.firstName();
+        cy.get('[data-qa="signup-name"]').type(name);
+
+        
+        let email=faker.internet.email('nida','yuu');
+        cy.get('[data-qa="signup-email"]').type(email);
+        
+
+       
 
 
 
