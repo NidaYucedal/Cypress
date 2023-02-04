@@ -48,11 +48,11 @@
 
 //TERMİNALDE: npm run mycode
 
-//"test-dashboard" : "npx cypress run --record --key 2613e508-1d76-438c-ae48-ff4f48e054e6",
+//"test-dashboard" : "npx cypress run --record --key 0a2da1bf-0fe2-4409-81dc-076838034088",
 //npm run test_dashboard => bütün testlerim çalışıp dashboarda gönderilecek
 
 
-//"dashboard_day02": "npx cypress run --spec 'cypress/e2e/day02/' --record --key 2613e508-1d76-438c-ae48-ff4f48e054e6"
+//"dashboard_day02": "npx cypress run --spec 'cypress/e2e/day01/' --record --key 0a2da1bf-0fe2-4409-81dc-076838034088"
 //npm run dashboard_day02 => sadec day02 klasöründeki tetler çalışacak ve dashboarda gönderilecek
 
 
