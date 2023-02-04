@@ -1,8 +1,9 @@
 /// <reference types="cypress" />
 
 describe('View Ports',() => {
-
-    it('Test Case 01', () => {
+   
+    it('Test Case 01',{ tags: ['@smoke', '@unit'] }, () => {
+        expect(true).to.be.true
 
         //cy.viewport(550, 750) // Set viewport to 550px x 750px
         //cy.viewport('iphone-6') // Set viewport to 375px x 667px

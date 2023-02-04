@@ -1,0 +1,25 @@
+
+install = npm i -D cypress-cucumber-tagging
+require('cypress-cucumber-tagging/src/support')()
+
+
+# run only the tests with tag "@unit"
+$ npx cypress run --env tags=@unit
+# run only the tests with tag "@unit" or "@config"
+$ npx cypress run --env tags="@unit or @config"
+# run only the tests with tags "@unit" and "@config"
+$ npx cypress run --env tags="@unit and @config"
+# run only the tests with tags "@unit" and "@config" or the tests with tag "@smoke"
+$ npx cypress run --env tags="(@unit and @config) or @smoke"
+# run any the tests with tags neither "@unit" nor "@config"
+$ npx cypress run --env tags="not (@unit or @config)"
+
+it('Test case 1', { tags: ['@config', '@unit'] }, () => {
+  expect(true).to.be.true
+})
+
+describe('Test Suite 1', { tags: ['@smoke', '@config'] }, () => {
+  it('Test case 2', () => {
+    expect(true).to.be.true
+  })
+})
