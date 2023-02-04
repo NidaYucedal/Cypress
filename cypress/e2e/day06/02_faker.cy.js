@@ -48,15 +48,15 @@ describe('Using Faker',() => {
         cy.get('[data-qa="city"]').type(city);
 
 
-        let zipcode=faker.address.zipCode();
+        let zipcode=faker.address.zipCode('#####');
         cy.get('[data-qa="zipcode"]').type(zipcode);
  
 
-        let phone=faker.phone.number();
+        let phone=faker.phone.number('###-###-##-##');
         cy.get('[data-qa="mobile_number"]').type(phone);
 
 
-        //cy.get('[data-qa="create-account"]').;
+        cy.get('[data-qa="create-account"]').click();
 
        
 
