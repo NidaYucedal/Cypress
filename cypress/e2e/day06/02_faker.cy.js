@@ -14,7 +14,6 @@ describe('Using Faker',() => {
         let name=faker.name.firstName();
         cy.get('[data-qa="signup-name"]').type(name);
 
-        
         let email=faker.internet.email('joe','black');
         cy.get('[data-qa="signup-email"]').type(email);
         
@@ -32,14 +31,11 @@ describe('Using Faker',() => {
         let company=faker.company.companyName();
         cy.get('[data-qa="company"]').type(company);
 
-
         let adress=faker.address.streetAddress();
         cy.get('[data-qa="address"]').type(adress);
 
-
        // let country=faker.address.country();
         cy.get('[data-qa="country"]').select(2);
-
 
         let state=faker.address.state();
         cy.get('[data-qa="state"]').type(state);
@@ -47,30 +43,21 @@ describe('Using Faker',() => {
         let city=faker.address.city();
         cy.get('[data-qa="city"]').type(city);
 
-
         let zipcode=faker.address.zipCode('#####');
         cy.get('[data-qa="zipcode"]').type(zipcode);
  
-
         let phone=faker.phone.number('###-###-##-##');
         cy.get('[data-qa="mobile_number"]').type(phone);
-
 
         cy.get('[data-qa="create-account"]').click();
 
         cy.get('b').should('be.visible');
 
         cy.get('[data-qa="continue-button"]').click();
-        cy.get(':nth-child(10) > a').should('include.text', firstName);
+        cy.get(':nth-child(10) > a').should('include.text', name);
 
-       
-
-
-   
+    
     })
-   
-  
-   
    
    })
    
