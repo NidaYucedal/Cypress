@@ -15,7 +15,6 @@ describe('',() => {
         cy.get('#productTitle').should('contain.text','Strap');
 
        
-
     })
 
    })
