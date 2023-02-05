@@ -2,7 +2,7 @@
 
 describe('Write&Read File',() => {
 
-    it('Wrire&Read File with Json', () => {
+    it('Wrire&Read with Json File', () => {
        
         cy.writeFile('./cypress/e2e/day07/UserData.json', { name: 'Eliza', email: 'eliza@example.com'})
 
