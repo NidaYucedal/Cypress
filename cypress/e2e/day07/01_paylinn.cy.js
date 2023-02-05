@@ -43,5 +43,18 @@ describe('PayLinn Bank', () => {
         loginPage.getHeader().should('contain.text', 'Welcome')
 
 
+
+        //Alt + Shift : click and drag the mouse pointer to select the text you want.
+        //Ctrl + Shift + P: Open the Command Palette
+        //Ctrl + P: Quick file open
+        //Ctrl + Shift + Tab: Cycle between open tabs
+        //Ctrl + K + S: Format document
+        //Ctrl + /: Toggle line comment
+        //Ctrl + F: Find in file
+        //Ctrl + H: Replace in file
+        //Alt + Left Arrow: Go back
+        //Alt + Right Arrow: Go forward
+        //F12: Go to definition
+
     })
 })
