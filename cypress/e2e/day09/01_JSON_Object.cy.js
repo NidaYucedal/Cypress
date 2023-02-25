@@ -25,7 +25,5 @@ describe('JSON Object', () => {
         console.log(body.Student[1].FirstName)
         console.log(body)
 
-
-
     })
 })
