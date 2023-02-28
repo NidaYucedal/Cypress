@@ -19,4 +19,3 @@ describe('Simple API Test', () => {
         .should('include', 'application/json; charset=utf-8')
     })
 })
-
