@@ -18,5 +18,4 @@ describe('Simple API Test', () => {
             .its('headers').its('content-type')
         .should('include', 'application/json; charset=utf-8')
     })
-
 })
