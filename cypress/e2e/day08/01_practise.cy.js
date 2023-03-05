@@ -13,7 +13,6 @@ describe('',() => {
         .contains('Strap').scrollIntoView().click();
 
         cy.get('#productTitle').should('contain.text','Strap');
-
     })
 
 })
