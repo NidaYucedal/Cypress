@@ -10,8 +10,7 @@ describe ('', () => {
         cy.wait(3000)
         cy.get('.v5yQqb').click();
         
-        
-
+    
     })
 
 })
