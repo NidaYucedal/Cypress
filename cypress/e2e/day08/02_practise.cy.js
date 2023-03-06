@@ -7,6 +7,7 @@ describe ('', () => {
         cy.visit('https://www.google.com');
         const searchbox=cy.get("input[name='q']");
         searchbox.type('amazon{enter}');
+        cy.get('.gLFyf').click();
         
 
 
